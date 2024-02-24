@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe Técnico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('background.jpg');">
+
+    <div class="container">
+        <h1>Informe Técnico</h1>
+        
+        <label for="orden">Número de Orden:</label>
+        <input type="text" id="orden" placeholder="Ingrese número de 5 dígitos" maxlength="5" required>
+        
+        <label for="informe">Informe Técnico:</label>
+        <textarea id="informe" rows="4" placeholder="Ingrese el informe técnico"></textarea>
+        
+        <label for="reparacion">Reparación:</label>
+        <input type="text" id="reparacion" placeholder="Ingrese la descripción de la reparación" required>
+        
+        <label for="costo">Costo:</label>
+        <input type="text" id="costo" placeholder="Ingrese el costo en pesos o dólares" required>
+        
+        <label for="demora">Demora:</label>
+        <input type="date" id="demora" required>
+        
+        <label for="observaciones">Observaciones:</label>
+        <textarea id="observaciones" rows="4" placeholder="Ingrese observaciones adicionales"></textarea>
+        
+        <button onclick="generarInforme()">Generar Informe</button>
+        <button id="whatsappButton" onclick="enviarWhatsApp()">Enviar por WhatsApp</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
